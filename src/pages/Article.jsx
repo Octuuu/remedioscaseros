@@ -24,9 +24,9 @@ export default function Article() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-grow max-w-3xl mx-auto px-6 py-12 flex flex-col items-center text-center text-green-900">
-        <h1 className="text-3xl font-bold mb-6 mt-20">{article.title}</h1>
-        <p className="whitespace-pre-line leading-relaxed max-w-prose">{article.content}</p>
+      <main className="flex-grow max-w-3xl mx-auto items-center px-6 py-12 flex flex-col   text-green-900">
+        <h1 className="text-4xl font-bold mb-6 mt-20">{article.title}</h1>
+        <p className="whitespace-pre-line leading-relaxed max-w-prose text-xl">{article.content}</p>
       </main>
       <Footer />
     </div>
