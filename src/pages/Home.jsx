@@ -14,18 +14,16 @@ export default function Home() {
         <meta name="keywords" content="remedios caseros, salud natural, consejos de salud, medicina natural" />
         <meta name="author" content="NaturalTips" />
 
-        {/* Open Graph para redes sociales */}
         <meta property="og:title" content="NaturalTips - Remedios Caseros y Consejos Naturales" />
         <meta property="og:description" content="Descubre remedios caseros naturales y consejos para una vida saludable. Información confiable y actualizada." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://tusitio.com/" />
-        <meta property="og:image" content="https://tusitio.com/og-image.jpg" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
 
-        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="NaturalTips - Remedios Caseros y Consejos Naturales" />
         <meta name="twitter:description" content="Descubre remedios caseros naturales y consejos para una vida saludable." />
-        <meta name="twitter:image" content="https://tusitio.com/twitter-image.jpg" />
+        <meta name="twitter:image" content="" />
       </Helmet>
 
       <Navbar />
