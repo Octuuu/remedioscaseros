@@ -12,6 +12,7 @@ import Terms from './pages/Terms.jsx'
 export default function App() {
   return (
     <HelmetProvider>
+      <meta name="google-site-verification" content="oqma3a__68vc2U9VS23ImqNR4-ujWG2li9gyhnFtBJ4" />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
