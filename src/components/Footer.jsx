@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-200 mt-12">
-      <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center text-green-900">
+    <footer className="bg-white border-t border-gray-200 mt-12 flex">
+      <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center text-green-900 flex-grow">
         <p className="mb-4 md:mb-0">&copy; {new Date().getFullYear()} NaturalTips. Todos los derechos reservados.</p>
         <ul className="flex space-x-6 text-green-700 font-medium">
           <li>

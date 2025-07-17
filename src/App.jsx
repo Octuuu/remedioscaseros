@@ -14,14 +14,16 @@ export default function App() {
     <HelmetProvider>
       <meta name="google-site-verification" content="oqma3a__68vc2U9VS23ImqNR4-ujWG2li9gyhnFtBJ4" />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/sobre-nosotros" element={<About />} />
-          <Route path="/article/:id" element={<Article />} />
-          <Route path="/contacto" element={<Contact />} />
-          <Route path="/privacidad" element={<Privacy />} />
-          <Route path="/terminos" element={<Terms />} />
-        </Routes>
+        <div className="flex flex-col min-h-screen">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/sobre-nosotros" element={<About />} />
+            <Route path="/article/:id" element={<Article />} />
+            <Route path="/contacto" element={<Contact />} />
+            <Route path="/privacidad" element={<Privacy />} />
+            <Route path="/terminos" element={<Terms />} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </HelmetProvider>
   )

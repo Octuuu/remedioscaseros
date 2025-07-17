@@ -1,18 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function ArticleCard({ title, description, url }) {
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition cursor-pointer">
-      <h3 className="text-xl font-semibold text-green-900 mb-2">{title}</h3>
-      <p className="text-green-700 mb-4">{description}</p>
-      <a 
-        href={url} 
-        className="text-green-600 hover:text-green-800 font-semibold" 
-        target="_blank" 
-        rel="noopener noreferrer"
+    <div className="border rounded p-4 shadow hover:shadow-lg transition">
+      <h2 className="text-xl font-semibold mb-2">{title}</h2>
+      <p className="mb-4">{description}</p>
+      <Link
+        to={url}
+        className="text-green-700 hover:text-green-900 font-semibold"
       >
-        Leer más →
-      </a>
+        Leer más
+      </Link>
     </div>
   )
 }

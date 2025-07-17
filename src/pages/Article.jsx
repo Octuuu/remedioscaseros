@@ -10,25 +10,25 @@ export default function Article() {
 
   if (!article) {
     return (
-      <>
+      <div className="flex flex-col min-h-screen">
         <Navbar />
-        <main className="max-w-3xl mx-auto px-6 py-12 text-center text-red-600">
+        <main className="flex-grow max-w-3xl mx-auto px-6 py-12 text-center text-red-600">
           <h1 className="text-2xl font-bold mb-4 mt-20">Artículo no encontrado</h1>
           <p>Lo sentimos, el artículo que buscas no existe.</p>
         </main>
         <Footer />
-      </>
+      </div>
     )
   }
 
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="max-w-3xl mx-auto px-6 py-12 text-green-900">
-        <h1 className="text-3xl font-bold mb-6">{article.title}</h1>
-        <p className="whitespace-pre-line leading-relaxed">{article.content}</p>
+      <main className="flex-grow max-w-3xl mx-auto px-6 py-12 flex flex-col items-center text-center text-green-900">
+        <h1 className="text-3xl font-bold mb-6 mt-20">{article.title}</h1>
+        <p className="whitespace-pre-line leading-relaxed max-w-prose">{article.content}</p>
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
